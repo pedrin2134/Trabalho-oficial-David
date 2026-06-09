@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="login">
 
-  <div class="box">
-
-    <h1>Login</h1>
-    
-
-    <input type="email" id="email" placeholder="Seu email">
-
-    <input type="password" id="senha" placeholder="Sua senha">
-    
-    <form action="Sistema de presença.html"> 
-    <input class="env" type="submit" value="Entrar">
-    </form>
-
-    <p>
-      Não possui conta?
-      <a href="cadastro.html">Cadastre-se</a>
-    </p>
-
-  
+    <div class="box">
+        <h1>Login</h1>
+        
+        <form action="Sistema de presença.html" >
+            
+            
+            <!-- Campo de Email com name e required -->
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+            
+            <!-- Campo de Senha com name e required -->
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+            
+            <!-- Botão de envio -->
+            <input class="env" type="submit" value="Entrar">
+            
+            
+        </form>
+        
+        <p>
+            Não possui conta? <a href="cadastro.html">Cadastre-se</a>
+        </p>
+    </div>
 
 </body>
 </html>
