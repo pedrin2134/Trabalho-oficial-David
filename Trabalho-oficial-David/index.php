@@ -67,7 +67,11 @@
             <input type="text" name="mae" required><br><br>
         <label >Pai</label>
             <input type="text" name="Pai" required><hr>
-            <form action="get" action="contratomat.php">
+            <p><input type="checkbox">Declaro que li e aceito os termos e condiçoes da condiçoes das clausulas da concentraçao de credito pessoal perante essa instituiçao financeira</p>  
+        <input type="submit" value="Enviar">
+        <hr>
+    </form>
+            <form action="contratomat.php">
                     <p>Solicitaçao:</p>
                     <label >Renda Mensal R$</label>
                         <input type="number" name="men" required>
@@ -78,11 +82,7 @@
                     <label >valor das Parcelas</label>
                         <input type="number" name="valp2" value="parcelas"><br><br>
                         <input type="submit" value="Calcular"><br>
-            </form>
-    <p><input type="checkbox">Declaro que li e aceito os termos e condiçoes da condiçoes das clausulas da concentraçao de credito pessoal perante essa instituiçao financeira</p>  
-        <input type="submit" value="Enviar">
-        <hr>
-    </form>
-    
+            
+                        </form>
 </body>
 </html>
