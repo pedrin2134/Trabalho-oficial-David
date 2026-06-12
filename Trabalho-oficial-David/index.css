@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color:rgba(30, 58, 138, 0.8);
+    padding: 20px;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Imagem do logo */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+/* Formulário */
+form {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+}
+
+/* Seções */
+form p {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 190px);
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+/* Botões */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Parágrafos do formulário */
+form p input[type="checkbox"] {
+    width: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    label, input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        width: 100%;
+        display: block;
+    }
+
+    input[type="text"], input[type="number"], input[type="email"], input[type="date"], select {
+        margin-bottom: 15px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+}
+
+/* Imagem do logo redonda */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%; /* transforma em círculo */
+    width: 100px;       /* ajuste conforme necessário */
+    height: 100px;      /* ajuste conforme necessário */
+    object-fit: cover;  /* mantém a proporção da imagem e corta excesso */
+}
