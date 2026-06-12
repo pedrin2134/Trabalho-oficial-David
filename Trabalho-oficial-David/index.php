@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
-
-    <link rel="stylesheet" href="_css/index.css" />
 </head>
 <body>
     <h2> Cadastro Escolar</h2><hr>
     
      <img src="image/logo.png " alt="Logo" width="100" height="50" >
-    <form method="get" action=""  >
+    <form method="GET" action="contrato.php"  >
         <p>Dados Pessoais</p>
         <label>Nome:</label>
             <input type="text" name="nome" size="102" required><br><br>
@@ -67,17 +65,18 @@
             <input type="text" name="mae" required><br><br>
         <label >Pai</label>
             <input type="text" name="Pai" required><hr>
-
-        <p>Solicitaçao:</p>
-        <label >Renda Mensal R$</label>
-            <input type="number" name="men" required>
-        <label >Valor Solicitado R$</label>
-        <input type="number" name="men2" required><br><br>
-            <label >Número de parcelas</label>
-            <input type="number" name="nump" min="1" max="48" step="1" required>
-        <label >valor das Parcelas</label>
-        <input type="number" name="valp2" value="parcelas"><br><br>
-        <input type="submit" value="Calcular"><br>
+            <form action="get" action="contratomat.php">
+                    <p>Solicitaçao:</p>
+                    <label >Renda Mensal R$</label>
+                        <input type="number" name="men" required>
+                    <label >Valor Solicitado R$</label>
+                        <input type="number" name="men2" required><br><br>
+                    <label >Número de parcelas</label>
+                        <input type="number" name="nump" min="1" max="48" step="1" required>
+                    <label >valor das Parcelas</label>
+                        <input type="number" name="valp2" value="parcelas"><br><br>
+                        <input type="submit" value="Calcular"><br>
+            </form>
     <p><input type="checkbox">Declaro que li e aceito os termos e condiçoes da condiçoes das clausulas da concentraçao de credito pessoal perante essa instituiçao financeira</p>  
         <input type="submit" value="Enviar">
         <hr>

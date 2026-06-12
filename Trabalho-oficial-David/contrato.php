@@ -24,27 +24,54 @@
     $numDparce = isset($_GET["nump"]) ? $_GET["nump"] : 0;
     $valparce12 = isset($_GET["valp2"]) ? $_GET["valp2"] : 0;
 
-    echo "<h2>CONTRATO / SOLICITADO DE EMPREESTIMO PESSOAL</h2>";
+    echo "<h2>Contrato do Aluno</h2>";
 
+   echo" <p>
+    Pelo presente instrumento particular, de um lado a Instituição de Ensino ESC (Escola),
+    inscrita no CNPJ nº 12350-923, com sede em Brasília, e de outro lado o(a) estudante
+    <strong>$nome</strong>, e-mail: <strong>$emai</strong>, portador(a) do CPF nº <strong>$cpf</strong>
+    e RG nº <strong>$rg</strong>, residente em <strong>$cidade</strong>, no estado de
+    <strong>$estadado</strong>, celebram o presente Contrato de Compromisso Estudantil.
+    </p>
     
-    echo  "NOME : $nome. <br>" ; 
-    echo " ENDEREÇO : $endereco  <br>";
-    echo " CIDADE : $cidade <br>";
-    echo " ESTADO: $estadado <br>";
-    echo " CEP : $CEP. <br>"; 
-    echo " E-mail :  $emai. <br>";
-    echo " RG : $rg. <br>";
-    echo " CPF :$cpf. <br>";
-    echo " Data de Nascimento :$nascimento. <br>";
-    echo " MÃE : $mae <br>";
-    echo " PAI :$Pai <br>";
-    echo " RENDA MENSAL : $RendaMensal <br>";
-    echo " VALOR SOLICITADO :$valordsolict <br>";
-    echo " NUMERO DE PARCELAS $numDparce <br>";
-    echo " VALOR DAS PARCELAS :  $valparce12 <br>";
-
+    <p>
+    O(a) estudante compromete-se a frequentar regularmente as aulas e atividades acadêmicas,
+    cumprir as normas e regulamentos internos da instituição, realizar avaliações, trabalhos
+    e demais atividades exigidas, zelar pelo patrimônio e pelos recursos disponibilizados e
+    manter seus dados cadastrais atualizados.
+    </p>
+    
+    <p>
+    A Instituição compromete-se a oferecer os serviços educacionais previstos, disponibilizar
+    professores e recursos adequados ao ensino, fornecer informações acadêmicas necessárias
+    ao desenvolvimento dos estudos e avaliar o desempenho do(a) estudante de acordo com os
+    critérios estabelecidos.
+    </p>
+    
+    <p>
+    Este contrato terá vigência de 11/06/2026 até 15/09/2029, podendo ser renovado mediante
+    acordo entre as partes. O presente contrato poderá ser rescindido por iniciativa de
+    qualquer das partes mediante comunicação prévia ou em caso de descumprimento das
+    obrigações aqui estabelecidas.
+    </p>
+    
+    <p>
+    As partes declaram ter lido, compreendido e aceitado todas as condições previstas neste
+    contrato, comprometendo-se a cumpri-las integralmente.
+    </p>
+    
+    <p>
+    Responsáveis: <strong>$mae</strong> e <strong>$Pai</strong>.<br>
+    Data de nascimento do estudante: <strong>$nascimento</strong>.
+    </p>
+    
+    <p>
+    Por meio deste instrumento, declara-se que a matrícula do(a) estudante $nome foi devidamente
+    efetivada junto à Instituição de Ensino ESC, passando este(a) a usufruir de todos os
+    direitos e deveres previstos no regulamento escolar e neste contrato.
+    </p>";
     ?>
-    <div><br><hr width="90%">
+ 
         
 
         
