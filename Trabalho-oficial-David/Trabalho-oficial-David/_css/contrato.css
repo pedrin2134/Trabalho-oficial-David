@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:linear-gradient(135deg,#dbeafe,#f5f7fa);
+    font-family:"Georgia", serif;
+    padding:40px;
+}
+
+.contrato{
+    max-width:950px;
+    margin:auto;
+    background:#fff;
+    padding:60px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+    border-top:10px solid #0d47a1;
+    border-bottom:10px solid #0d47a1;
+    position:relative;
+}
+
+.contrato::before{
+    content:"CONTRATO";
+    position:absolute;
+    top:18px;
+    right:35px;
+    font-size:14px;
+    color:#b0b0b0;
+    letter-spacing:4px;
+    font-weight:bold;
+}
+
+h2{
+    text-align:center;
+    color:#0d47a1;
+    font-size:38px;
+    margin-bottom:40px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+p{
+    font-size:19px;
+    color:#444;
+    text-align:justify;
+    line-height:2;
+    text-indent:50px;
+    margin-bottom:22px;
+}
+
+strong{
+    color:#0d47a1;
+    font-weight:bold;
+}
+
+p:nth-child(even){
+    background:#f8fbff;
+    padding:18px;
+    border-left:5px solid #0d47a1;
+    border-radius:8px;
+}
+
+.assinaturas{
+    display:flex;
+    justify-content:space-between;
+    margin-top:90px;
+}
+
+.assinatura{
+    width:300px;
+    text-align:center;
+}
+
+.assinatura hr{
+    border:none;
+    border-top:2px solid #444;
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .contrato{
+        padding:30px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    p{
+        font-size:17px;
+    }
+
+    .assinaturas{
+        flex-direction:column;
+        gap:40px;
+        align-items:center;
+    }
+
+}
